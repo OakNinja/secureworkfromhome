@@ -1,15 +1,30 @@
 
 body {
+    margin-left: 0;
+    margin-right: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color:#fdf6e3;
 }
 
 h1 {
+    color: #b58900;
     font-weight: normal;
     font-family: 'Open Sans', sans-serif;
 }
 
 .center {
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .main-content {
+        display: flex; 
+        justify-content: center;
+    }
+    .main-content-inner {
+        max-width: 768px;
+    }
 }
 
 <!-- CSS originally from https://alligator.io/css/collapsible/ -->
@@ -27,14 +42,14 @@ h1 {
   
     font-weight: bold;
     font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-transform: uppercase;
     text-align: center;
   
-    padding: 1rem;
+    padding: 0.8rem;
   
-    color: #A77B0E;
-    background: #FAE042;
+    color: #073642;
+    background:#eee8d5;
   
     cursor: pointer;
   
@@ -81,9 +96,10 @@ h1 {
   }
   
   .collapsible-content .content-inner {
-    background: rgba(250, 224, 66, .2);
+    background: #fdf6e3;
     border-bottom: 1px solid rgba(250, 224, 66, .45);
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     padding: .5rem 1rem;
   }
+}
