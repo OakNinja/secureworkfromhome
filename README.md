@@ -1,6 +1,6 @@
-# secureworkfromhome
-Simple secure work from home guidelines.
+## Simple secure work from home guidelines for regular people.
+Hosted on Github pages and available here: [secureworkfromhome.com](https://secureworkfromhome.com "secureworkfromhome.com")
 
-https://secureworkfromhome.com
+The page is written in plain HTML with some basic CSS. 
 
-Please contribute!
+If you get stuck following any of the steps, file an issue using the "Issues" tab. Remember, *all issues are publicly available for everyone to see.* 
