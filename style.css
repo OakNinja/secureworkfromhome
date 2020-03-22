@@ -1,105 +1,110 @@
-
 body {
-    margin-left: 0;
-    margin-right: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color:#fdf6e3;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fdf6e3;
 }
 
 h1 {
-    color: #b58900;
-    font-weight: normal;
-    font-family: 'Open Sans', sans-serif;
+  color: #b58900;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-
-    .main-content {
-        display: flex; 
-        justify-content: center;
-    }
-    .main-content-inner {
-        max-width: 768px;
-    }
+  .main-content {
+    display: flex;
+    justify-content: center;
+  }
+  .main-content-inner {
+    max-width: 768px;
+  }
 }
 
-<!-- CSS originally from https://alligator.io/css/collapsible/ -->
+/* CSS originally from https://alligator.io/css/collapsible/ */
 
 .wrap-collabsible {
-    margin-bottom: 1.2rem 0;
-  }
-  
-  input[type='checkbox'] {
-    display: none;
-  }
-  
-  .lbl-toggle {
-    display: block;
-  
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 1.0rem;
-    text-transform: uppercase;
-    text-align: center;
-  
-    padding: 0.8rem;
-  
-    color: #073642;
-    background:#eee8d5;
-  
-    cursor: pointer;
-  
-    
-    transition: all 0.25s ease-out;
-  }
-  
-  .lbl-toggle:hover {
-    color: #7C5A0B;
-  }
-  
-  .lbl-toggle::after {
-    content: ' ';
-    display: inline-block;
-  
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid currentColor;
-    vertical-align: middle;
-    margin-top: .3rem;
-    margin-left: .7rem;
-    transform: translateY(-2px);
-  
-    transition: transform .2s ease-out;
-  }
-  
-  .toggle:checked + .lbl-toggle::after {
-    transform: rotate(90deg) translateX(-3px);
-  }
-  
-  .collapsible-content {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height .25s ease-in-out;
-  }
-  
-  .toggle:checked + .lbl-toggle + .collapsible-content {
-    max-height: 100vh;
-  }
-  
-  .toggle:checked + .lbl-toggle {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  .collapsible-content .content-inner {
-    background: #fdf6e3;
-    border-bottom: 1px solid rgba(250, 224, 66, .45);
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    padding: .5rem 1rem;
-  }
+  margin-bottom: 1.2rem 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0.8rem;
+
+  color: #073642;
+  background: #eee8d5;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #7c5a0b;
+}
+
+.lbl-toggle::after {
+  content: " ";
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-top: 0.3rem;
+  margin-left: 0.7rem;
+  transform: translateY(-2px);
+
+  transition: transform 0.2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::after {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: transparent;
+  border-bottom: 1px solid rgba(250, 224, 66, 0.45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 0.5rem 1rem;
+}
+
+@media print {
+    body {
+        background-color: white;
+    }
+    .collapsible-content {
+        max-height: 100vh;
+      }
 }
