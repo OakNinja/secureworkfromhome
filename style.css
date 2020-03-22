@@ -15,6 +15,10 @@ h1 {
   text-align: center;
 }
 
+ul {
+  padding-left: 15px;
+}
+
 @media only screen and (min-width: 768px) {
   .main-content {
     display: flex;
@@ -103,6 +107,13 @@ input[type="checkbox"] {
 @media print {
     body {
         background-color: white;
+    }
+    .main-content {
+      display: flex;
+      justify-content: center;
+    }
+    .main-content-inner {
+      max-width: 768px;
     }
     .collapsible-content {
         max-height: 100vh;
