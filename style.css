@@ -29,6 +29,11 @@ ul {
   }
 }
 
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
 /* CSS originally from https://alligator.io/css/collapsible/ */
 
 .wrap-collabsible {
